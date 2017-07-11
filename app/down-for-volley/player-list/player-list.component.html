@@ -1,0 +1,7 @@
+<ListView [items]="players" class="list-group" sdkExampleTitle sdkToggleNavButton>
+    <ng-template let-item="item">
+        <GridLayout [nsRouterLink]="item.name" class="list-group-item">
+            <Label [text]="item.down + ' - ' + item.name" class="list-group-item-heading"></Label>
+        </GridLayout>
+    </ng-template>
+</ListView>

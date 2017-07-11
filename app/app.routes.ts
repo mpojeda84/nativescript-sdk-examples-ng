@@ -6,6 +6,11 @@ export const routes = [
         data: { title: "NativeScript Code Samples" }
     },
     {
+        path: "playing",
+        loadChildren: "./down-for-volley/player-list/player-list.module#PlayerListModule",
+        data: { title: "Playing" }
+    },
+    {
         path: "action-bar",
         loadChildren: "./ui-category/action-bar/action-bar-examples.module#ActionBarExamplesModule",
         data: { title: "ActionBar" }

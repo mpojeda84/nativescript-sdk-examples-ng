@@ -28,7 +28,8 @@ declare var GMSServices: any;
         NativeScriptAnimationsModule,
         NativeScriptFormsModule,
         NativeScriptRouterModule,
-        NativeScriptRouterModule.forRoot(routes),
+        NativeScriptRouterModule.forRoot(routes)
+        //NativeScriptRouterModule.forRoot(routes, { enableTracing: true })
     ],
     providers: [
         ModalDialogService,
