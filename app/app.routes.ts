@@ -2,7 +2,7 @@
 export const routes = [
     {
         path: "",
-        loadChildren: "./examples-list.module#ExamplesListModule",
+        loadChildren: "./game-day-list.module#GameDayListModule",
         data: { title: "NativeScript Code Samples" }
     },
     {

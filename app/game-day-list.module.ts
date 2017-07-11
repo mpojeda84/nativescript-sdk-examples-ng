@@ -1,12 +1,12 @@
 import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
 import { NativeScriptRouterModule } from "nativescript-angular/router";
 import { NativeScriptModule } from "nativescript-angular/nativescript.module";
-import { ExamplesListComponent } from "./examples-list.component";
+import { GameDayListComponent } from "./game-day-list.component";
 import { TitleAndNavButtonModule } from "./directives/title-and-nav-button.module";
 
 export const routerConfig = [{
-    path: "nope",
-    component: ExamplesListComponent
+    path: "",
+    component: GameDayListComponent
 }];
 
 @NgModule({
@@ -17,9 +17,9 @@ export const routerConfig = [{
         NativeScriptRouterModule,
         NativeScriptRouterModule.forChild(routerConfig)
     ],
-    declarations: [ExamplesListComponent]
+    declarations: [GameDayListComponent]
 })
 
-export class ExamplesListModule {
+export class GameDayListModule {
     constructor() { }
 }
