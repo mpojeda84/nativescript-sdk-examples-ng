@@ -3,7 +3,7 @@ export const routes = [
     {
         path: "",
         loadChildren: "./game-day-list.module#GameDayListModule",
-        data: { title: "NativeScript Code Samples" }
+        data: { title: "Upcoming Dates" }
     },
     {
         path: "playing",

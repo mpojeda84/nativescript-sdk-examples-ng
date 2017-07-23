@@ -1,7 +1,11 @@
-<ListView [items]="links" class="list-group" sdkExampleTitle sdkToggleNavButton>
-    <ng-template let-item="item">
-        <GridLayout [nsRouterLink]="item.link" class="list-group-item">
-            <Label [text]="item.title" class="list-group-item-heading"></Label>
-        </GridLayout>
-    </ng-template>
-</ListView>
+<StackLayout sdkExampleTitle sdkToggleNavButton>
+     <!-- <ListView [items]="upcomingGameDays" class="list-group">
+        <ng-template let-item="item">
+             <Label [text]="(item.date | date:'EEEE') + ' (' + (item.date | date:'shortDate') + " class="list-group-item-heading"></Label> 
+            <Label [text]="item.date | date:'EEEE'" class="list-group-item-heading"></Label>
+        </ng-template>
+    </ListView>  -->
+    <StackLayout *ngFor="let item of upcomingGameDays | async">
+        <Label [text]="item.date" class="list-group-item-heading"></Label> 
+    </StackLayout>
+</StackLayout>

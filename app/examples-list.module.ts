@@ -3,6 +3,8 @@ import { NativeScriptRouterModule } from "nativescript-angular/router";
 import { NativeScriptModule } from "nativescript-angular/nativescript.module";
 import { ExamplesListComponent } from "./examples-list.component";
 import { TitleAndNavButtonModule } from "./directives/title-and-nav-button.module";
+import { NativeScriptHttpModule } from "nativescript-angular/http";
+
 
 export const routerConfig = [{
     path: "nope",
