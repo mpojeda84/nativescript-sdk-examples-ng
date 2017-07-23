@@ -16,11 +16,7 @@ export class GameDayListComponent implements OnInit{
     upcomingGameDays: Observable<Array<GameDay>>;
     error: any;
 
-    constructor(
-        private gameDayListService: GameDayListService
-    ) {
-        
-    }
+    constructor(private gameDayListService: GameDayListService) {}
 
     ngOnInit(): void {
         this.getGameDays();
